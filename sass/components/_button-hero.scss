@@ -1,3 +1,4 @@
+
 .button-hero {
 font-weight: bold;
 line-height: 1.8;
@@ -12,11 +13,13 @@ background-color: var(--accent-color);
   @extend %centered-flex;
     padding: 10px 10px 10px 29px;
     transition: box-shadow var(--duration) var(--cubic-bezier);
-}
-.button-hero--box-shadow:hover,
-.button-hero--box-shadow:focus {
+    &:hover,
+    &:focus {
   box-shadow: var(--box-shadow-submit);
 }
+}
+
+
 
 .button-hero__icon {
   margin-left: 10px;
@@ -29,9 +32,9 @@ background-color: var(--accent-color);
   padding: 10px 55px 10px 56px;
  transition: box-shadow var(--duration) var(--cubic-bezier),
  background var(--duration) var(--cubic-bezier);
-}
-.button-hero--background-accent:focus,
-.button-hero--background-accent-:hover {
+&:focus,
+&:hover {
 box-shadow: var(--box-shadow-submit);
 background: #188CE8;
+}
 }
